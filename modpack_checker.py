@@ -77,7 +77,7 @@ def main():
         print(f"  ✗ {f}: {m}")
     for n in unknown:
         print(f"  ? {n}: not on Modrinth, can't check")
-    if not problems:
+    if not problems and versions:
         print("  ✓ no compatibility problems found")
     sys.exit(1 if problems else 0)
 
